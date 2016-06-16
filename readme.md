@@ -1,7 +1,7 @@
 # ts-httpexceptions 
 
-[![Build Status](https://travis-ci.org/Romakita/httpexceptions.svg?branch=master)](https://travis-ci.org/Romakita/httpexceptions)
-[![Coverage Status](https://coveralls.io/repos/github/Romakita/httpexceptions/badge.svg?branch=master)](https://coveralls.io/github/Romakita/httpexceptions?branch=master)
+[![Build Status](https://travis-ci.org/Romakita/ts-httpexceptions.svg?branch=master)](https://travis-ci.org/Romakita/ts-httpexceptions)
+[![Coverage Status](https://coveralls.io/repos/github/Romakita/ts-httpexceptions/badge.svg?branch=master)](https://coveralls.io/github/Romakita/ts-httpexceptions?branch=master)
 [![TypeScript](https://badges.frapsoft.com/typescript/love/typescript.svg?v=100)](https://github.com/ellerbrock/typescript-badges/) 
 [![TypeScript](https://badges.frapsoft.com/typescript/version/typescript-v18.svg?v=100)](https://github.com/ellerbrock/typescript-badges/)
 
@@ -33,13 +33,13 @@ You can use HTTPExceptions method to throw a custom Exception (see example).
 
 ```bash
 $ npm install -g typescript typings 
-$ npm install httpexceptions
+$ npm install ts-httpexceptions
 ```
 
 ## API
 
 ```typescript
-   import {BadRequest, Exception} from 'httpexceptions';
+   import {BadRequest, Exception} from 'ts-httpexceptions';
    let express = require('express');
    let app = express();
    
