@@ -1,0 +1,40 @@
+{
+  "name": "httpexceptions",
+  "version": "1.3.0",
+  "description": "Provide exception for HTTP Rest API",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "typings install",
+    "postinstall": "tsc",
+    "test": "mocha --reporter spec --check-leaks --bail test/",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
+    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/romakita/httpexceptions"
+  },
+  "keywords": [
+    "Exceptions",
+    "Throwable",
+    "Rest",
+    "HTTP",
+    "Typescript"
+  ],
+  "author": "Romakita",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/romakita/httpexceptions/issues"
+  },
+  "homepage": "https://github.com/romakita/httpexceptions",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^2.1.0",
+    "istanbul": "^0.4.2",
+    "mocha": "^2.4.5",
+    "typescript": "^1.8.10"
+  },
+  "engines": {
+    "node": ">=0.6.19"
+  }
+}
