@@ -14,7 +14,7 @@ This module lets you to throw an HTTP Exception quickly.
 Some HTTP Exception are already implemented : 
  * BadRequest
  * Unauthorized
- * PaymentRequired
+ * PaymentRequired 
  * Forbidden
  * NotFound
  * MethodNotAllowed
