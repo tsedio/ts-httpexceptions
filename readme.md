@@ -7,7 +7,7 @@
 
 > Provide Exceptions for REST API based on Express.js. Written in Typescript !
 
-This module lets you to throw an HTTP Exception quickly.
+This module lets you to throw an HTTP Exception quickly. 
 
 ## Features
 
