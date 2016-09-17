@@ -4,11 +4,17 @@
   "description": "Provide exception for HTTP Rest API",
   "main": "index.js",
   "scripts": {
-    "preinstall": "typings install",
-    "postinstall": "tsc",
+    "build": "npm run tsc:es5 && npm run tsc:es6",
+    "postinstall": "npm run build",
+    "release:major": "npm version major && npm publish && git push --follow-tags",
+    "release:minor": "npm version minor && npm publish && git push --follow-tags",
+    "release:patch": "npm version patch && npm publish && git push --follow-tags",
     "test": "mocha --reporter spec --check-leaks --bail test/",
-    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
-    "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
+    "test:cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
+    "test:travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/",
+    "tsc": "tsc",
+    "tsc:es5": "tsc --project tsconfig.json",
+    "tsc:es6": "tsc --project tsconfig.es6.json"
   },
   "repository": {
     "type": "git",
@@ -29,10 +35,16 @@
   "homepage": "https://github.com/romakita/httpexceptions",
   "dependencies": {},
   "devDependencies": {
+    "@types/chai": "^3.4.32",
+    "@types/express": "^4.0.32",
+    "@types/express-serve-static-core": "^4.0.33",
+    "@types/mime": "0.0.28",
+    "@types/mocha": "^2.2.31",
+    "@types/serve-static": "^1.7.30",
     "chai": "^2.1.0",
     "istanbul": "^0.4.2",
     "mocha": "^2.4.5",
-    "typescript": "^1.8.10"
+    "typescript": "^2.0.2"
   },
   "engines": {
     "node": ">=0.12.0"
