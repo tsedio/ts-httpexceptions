@@ -1,6 +1,6 @@
 {
   "name": "ts-httpexceptions",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Provide exception for HTTP Rest API",
   "main": "index.js",
   "scripts": {
@@ -39,7 +39,6 @@
     "@types/mocha": "^2.2.31"
   },
   "devDependencies": {
-
     "chai": "^2.1.0",
     "istanbul": "^0.4.2",
     "mocha": "^2.4.5",
