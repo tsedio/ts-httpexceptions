@@ -9,7 +9,6 @@
     "types": [
       "express",
       "chai",
-      "mime",
       "mocha"
     ]
   },
