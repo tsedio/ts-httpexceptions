@@ -34,11 +34,12 @@
   },
   "homepage": "https://github.com/romakita/httpexceptions",
   "dependencies": {
-    "@types/express": "^4.0.32"
+    "@types/express": "^4.0.32",
+    "@types/chai": "^3.4.32",
+    "@types/mocha": "^2.2.31"
   },
   "devDependencies": {
-    "@types/chai": "^3.4.32",
-    "@types/mocha": "^2.2.31",
+
     "chai": "^2.1.0",
     "istanbul": "^0.4.2",
     "mocha": "^2.4.5",
