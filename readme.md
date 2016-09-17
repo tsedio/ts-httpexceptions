@@ -32,7 +32,7 @@ You can use HTTPExceptions method to throw a custom Exception (see example).
 ## Installation
 
 ```bash
-$ npm install -g typescript typings 
+$ npm install -g typescript@2.0.2
 $ npm install ts-httpexceptions
 ```
 
