@@ -7,12 +7,10 @@
     "declaration":false,
     "lib": ["es6"],
     "types": [
-      "chai",
       "express",
-      "express-serve-static-core",
+      "chai",
       "mime",
-      "mocha",
-      "serve-static"
+      "mocha"
     ]
   },
 
