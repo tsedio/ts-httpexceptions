@@ -3,7 +3,7 @@
   "version": "2.1.0",
   "description": "Provide exception for HTTP Rest API",
   "main": "lib/index.js",
-  "typings": "dts/index.d.js",
+  "typings": "dts/index.d.ts",
   "scripts": {
     "prepublish": "npm run tsc:es5 && npm run tsc:es6 && npm run tsc:dec",
     "coverage": "npm run test-cov && npm run test-remap",

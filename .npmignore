@@ -20,3 +20,4 @@ tslint.json
 .vscode
 .publishrc
 type_definitions
+.idea
