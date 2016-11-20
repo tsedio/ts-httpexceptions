@@ -7,7 +7,7 @@
   "scripts": {
     "prepublish": "npm run tsc:es5 && npm run tsc:es6 && npm run tsc:dec",
     "coverage": "npm run test-cov && npm run test-remap",
-    "tslint": "tslint ./*.ts ./lib/*.ts",
+    "tslint": "tslint ./src/*.ts",
     "release:major": "npm version major && npm publish && git push --follow-tags",
     "release:minor": "npm version minor && npm publish && git push --follow-tags",
     "release:patch": "npm version patch && npm publish && git push --follow-tags",
@@ -39,6 +39,7 @@
   },
   "homepage": "https://github.com/romakita/httpexceptions",
   "dependencies": {
+    "@types/node": "^6.0.38",
     "@types/express": "^4.0.32",
     "@types/chai": "^3.4.32",
     "@types/mocha": "^2.2.31"
