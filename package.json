@@ -11,12 +11,12 @@
     "release:major": "npm run build:doc && npm run commit:doc ",
     "release:minor": "npm version minor && npm publish && git push --follow-tags",
     "release:patch": "npm version patch && npm publish && git push --follow-tags",
-    "test": "NODE_ENV=test node_modules/mocha/bin/_mocha --opts test/mocha.opts",
+    "test": "NODE_ENV=test mocha",
     "test:cov": "NODE_ENV=test nyc npm test",
     "test:travis": "NODE_ENV=test nyc report --reporter=text-lcov | coveralls",
-    "tsc": "node_modules/typescript/bin/tsc",
-    "tsc:compile": "rm -rf ./lib && node_modules/typescript/bin/tsc --project tsconfig.compile.json",
-    "build:doc": "./node_modules/typedoc/bin/typedoc --target ES6 --module commonjs --name TsHttpExceptions --exclude *.spec.ts --externalPattern *.spec.ts --out docs/ src/**/",
+    "tsc": "tsc",
+    "tsc:compile": "rm -rf ./lib && tsc --project tsconfig.compile.json",
+    "build:doc": "typedoc --target ES6 --module commonjs --name TsHttpExceptions --exclude *.spec.ts --externalPattern *.spec.ts --out docs/ src/**/",
     "commit:doc": "git status | grep -qF 'working directory clean' || (git commit -m 'build documentation' && git push origin master)"
   },
   "repository": {
@@ -44,7 +44,7 @@
     "@types/node": "^6.0.38",
     "chai": "^2.1.0",
     "istanbul": "^0.4.2",
-    "mocha": "^2.4.5",
+    "mocha": "^3.3.0",
     "nyc": "^10.3.0",
     "remap-istanbul": "^0.9.5",
     "source-map-support": "^0.4.15",
@@ -58,7 +58,6 @@
     "node": ">=4.0.0"
   },
   "nyc": {
-
     "extension": [
       ".ts",
       ".tsx"
