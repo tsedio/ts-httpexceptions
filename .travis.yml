@@ -15,15 +15,12 @@ addons:
       - g++-4.8
 
 before_install:
-  - npm install -g typescript@2.0.2
+  - npm install -g typescript@2.0.2 coveralls@2 nyc@10.3
 
 script:
   - "npm run test"
 
 after_success:
   - npm run test:travis
-
-after_script:
-  - "test -e ./coverage/lcov.info && npm install coveralls@2 remap-istanbul@0.6.4 && ./node_modules/.bin/remap-istanbul -i ./coverage/coverage.json -t lcovonly | coveralls"
 
 sudo: required
