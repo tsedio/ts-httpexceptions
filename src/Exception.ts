@@ -22,7 +22,7 @@ export class Exception implements Error {
      * Exception base name
      * @type {string}
      */
-    public name: string = 'HttpException';
+    public name: string = "HttpException";
     /**
      * Message of the exception
      */
@@ -31,7 +31,7 @@ export class Exception implements Error {
      * Exception type
      * @type {string}
      */
-    public type: string = 'HTTP_EXCEPTION';
+    public type: string = "HTTP_EXCEPTION";
     /**
      * Stack calling
      */
@@ -52,13 +52,13 @@ export class Exception implements Error {
 
         Error.apply(this, arguments);
 
-        if (typeof Error.captureStackTrace === 'function') {
+        if (typeof Error.captureStackTrace === "function") {
             //noinspection JSUnresolvedFunction
             Error.captureStackTrace(this, (<any>this).contructor);
         }
 
         this.status = status;
-        this.message = message || '';
+        this.message = message || "";
 
         if (innerException) {
             if (innerException instanceof Error) {
@@ -79,8 +79,8 @@ export class Exception implements Error {
     }
 
     toString() {
-        //console.warn(this.type + ': ' + this.status + ' ' + this.name  + ' => ' + this.message)
-        return (this.name + '(' + this.status + '): ' + this.message + " ").trim();
+        // console.warn(this.type + ": " + this.status + " " + this.name  + " => " + this.message)
+        return (this.name + "(" + this.status + "): " + this.message + " ").trim();
     }
 
 }
