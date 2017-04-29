@@ -16,7 +16,7 @@
     "test:travis": "NODE_ENV=test nyc --reporter=text-lcov npm test  | coveralls",
     "tsc": "tsc",
     "tsc:compile": "rm -rf ./lib && tsc --project tsconfig.compile.json",
-    "build:doc": "typedoc --target ES6 --module commonjs --name TsHttpExceptions --out docs/ src/**/",
+    "build:doc": "typedoc --target ES6 --module commonjs --name TsHttpExceptions --exclude '**/*.spec.ts' --out docs/ ./src/**/*.ts",
     "commit:doc": "git status | grep -qF 'working directory clean' || (git commit -m 'build documentation' && git push origin master)"
   },
   "repository": {
