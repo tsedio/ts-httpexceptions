@@ -9,8 +9,8 @@ import {
     RequestTimeout, RequestURITooLong, TooManyRequests,
     Unauthorized, UnavailabledForLegalReasons, UnsupportedMediaType,
     UpgradeRequired
-} from "./";
-import {ExpectationFailed} from "./ExpectationFailed";
+} from "../src/clientErrors";
+import {ExpectationFailed} from "../src/clientErrors/ExpectationFailed";
 
 describe("ClientErrors", () => {
 

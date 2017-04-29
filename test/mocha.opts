@@ -5,4 +5,4 @@
 --check-leaks
 --full-trace
 --bail
-src/**/*.spec.ts
+test/**/*.spec.ts

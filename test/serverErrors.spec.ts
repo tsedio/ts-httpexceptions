@@ -4,8 +4,8 @@ import {
     InternalServerError, NetworkAuthenticationRequired,
     NotExtended,ProxyError, ServiceUnvailable,
     NotImplemented
-} from "./";
-import {VariantAlsoNegotiates} from "./VariantAlsoNegotiates";
+} from "../src/serverErrors";
+import {VariantAlsoNegotiates} from "../src/serverErrors/VariantAlsoNegotiates";
 
 describe("ServerErrors", () => {
     describe("BadGateway", () => {

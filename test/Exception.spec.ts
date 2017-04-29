@@ -1,7 +1,7 @@
 import {expect, assert} from "chai";
 import {
     Exception
-} from "./";
+} from "../src";
 
 describe("Exception", () => {
 

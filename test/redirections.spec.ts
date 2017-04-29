@@ -2,8 +2,8 @@ import {expect, assert} from "chai";
 import {MovedPermanently, MovedTemporarily, MultipleChoices,
     PermanentRedirect, SeeOther, TemporaryRedirect,
     TooManyRedirects, UseProxy
-} from "./";
-import {NotModified} from "./NotModified";
+} from "../src/redirections";
+import {NotModified} from "../src/redirections/NotModified";
 
 describe("Redirections", () => {
 
