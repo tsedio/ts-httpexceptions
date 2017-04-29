@@ -1,17 +1,13 @@
-export * from "./badgateway";
-export * from "./badrequest";
-export * from "./forbidden";
-export * from "./gatewaytimeout";
-export * from "./internalservererror";
-export * from "./methodnotallowed";
-export * from "./notacceptable";
-export * from "./notfound";
-export * from "./notimplemented";
-export * from "./paymentrequired";
-export * from "./proxyerror";
-export * from "./serviceunvailable";
-export * from "./unauthorized";
-import {Exception} from "./exception";
+/**
+ * @module ts-httpexceptions
+ * @preferred
+ */ /** */
+
+export * from "./clientErrors";
+export * from "./redirections";
+export * from "./serverErrors";
+
+import {Exception} from "./Exception";
 
 export {
     Exception,

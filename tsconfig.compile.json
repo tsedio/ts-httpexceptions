@@ -16,13 +16,9 @@
     "rootDir": "src/",
     "outDir": "lib/",
     "declaration": true,
-    "declarationDir":"dts/",
+    "declarationDir":"lib/",
     "noResolve": false,
-    "types":[
-      "node",
-      "chai",
-      "mocha"
-    ]
+    "typeRoots": ["node_modules/@types"]
   },
 
   "exclude": [

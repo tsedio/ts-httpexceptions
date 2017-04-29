@@ -3,7 +3,12 @@
 [![Build Status](https://travis-ci.org/Romakita/ts-httpexceptions.svg?branch=master)](https://travis-ci.org/Romakita/ts-httpexceptions)
 [![Coverage Status](https://coveralls.io/repos/github/Romakita/ts-httpexceptions/badge.svg?branch=master)](https://coveralls.io/github/Romakita/ts-httpexceptions?branch=master)
 [![TypeScript](https://badges.frapsoft.com/typescript/love/typescript.svg?v=100)](https://github.com/ellerbrock/typescript-badges/) 
-[![TypeScript](https://badges.frapsoft.com/typescript/version/typescript-v18.svg?v=100)](https://github.com/ellerbrock/typescript-badges/)
+[![Package Quality](http://npm.packagequality.com/shield/ts-express-decorators.png)](http://packagequality.com/#?package=ts-express-decorators)
+[![npm version](https://badge.fury.io/js/ts-express-decorators.svg)](https://badge.fury.io/js/ts-express-decorators)
+[![Dependencies](https://david-dm.org/Romakita/ts-httpexceptions.svg)](https://david-dm.org/Romakita/ts-httpexceptions#info=dependencies)
+[![img](https://david-dm.org/Romakita/ts-httpexceptions/dev-status.svg)](https://david-dm.org/Romakita/ts-httpexceptions/#info=devDependencies)
+[![img](https://david-dm.org/Romakita/ts-httpexceptions/peer-status.svg)](https://david-dm.org/Romakita/ts-httpexceptions/#info=peerDependenciess)
+[![Known Vulnerabilities](https://snyk.io/test/github/Romakita/ts-httpexceptions/badge.svg)](https://snyk.io/test/github/Romakita/ts-httpexceptions)
 
 > Provide Exceptions for REST API based on Express.js. Written in Typescript !
 
