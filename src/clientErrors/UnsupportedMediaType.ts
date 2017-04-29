@@ -1,7 +1,7 @@
 /**
  * @module clientErrors
  */ /** */
-import {Exception} from "../exception";
+import {Exception} from "../Exception";
 const CODE = 415;
 
 export class UnsupportedMediaType extends Exception {

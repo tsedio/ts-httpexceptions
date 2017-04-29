@@ -1,7 +1,7 @@
 /**
  * @module clientErrors
  */ /** */
-import {Exception} from "../exception";
+import {Exception} from "../Exception";
 const CODE = 406;
 
 export class NotAcceptable extends Exception {

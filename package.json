@@ -8,7 +8,7 @@
     "prepublish": "rm -rf ./lib && npm run tsc:compile",
     "coverage": "npm run test-cov && npm run test-remap",
     "tslint": "tslint ./src/*.ts",
-    "release:major": "npm run build:doc &&  ",
+    "release:major": "npm run build:doc && npm run commit:doc ",
     "release:minor": "npm version minor && npm publish && git push --follow-tags",
     "release:patch": "npm version patch && npm publish && git push --follow-tags",
     "test": "npm run tsc && mocha --reporter spec --check-leaks --bail test/",
@@ -18,7 +18,7 @@
     "tsc": "node_modules/typescript/bin/tsc",
     "tsc:compile": "node_modules/typescript/bin/tsc --project tsconfig.compile.json",
     "build:doc": "./node_modules/typedoc/bin/typedoc --target ES6 --module commonjs --name TsHttpExceptions --exclude test --out docs/ src/**/",
-    "commit:doc": "git status --porcelain | grep . || (git commit -m 'build documentation' && git push origin master)"
+    "commit:doc": "git status | grep -qF 'working directory clean' || (git commit -m 'build documentation' && git push origin master)"
   },
   "repository": {
     "type": "git",
