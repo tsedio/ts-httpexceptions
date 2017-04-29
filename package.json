@@ -6,18 +6,14 @@
   "typings": "dts/index.d.ts",
   "scripts": {
     "prepublish": "npm run tsc:compile",
-    "coverage": "npm run test-cov && npm run test-remap",
     "tslint": "tslint ./src/*.ts",
-    "release:major": "npm run build:doc && npm run commit:doc ",
-    "release:minor": "npm version minor && npm publish && git push --follow-tags",
-    "release:patch": "npm version patch && npm publish && git push --follow-tags",
     "test": "NODE_ENV=test mocha",
     "test:cov": "NODE_ENV=test nyc npm test",
-    "test:travis": "NODE_ENV=test nyc --reporter=text-lcov npm test  | coveralls",
+    "test:travis": "NODE_ENV=test nyc --reporter=text-lcov npm test | coveralls",
     "tsc": "tsc",
     "tsc:compile": "rm -rf ./lib && tsc --project tsconfig.compile.json",
-    "build:doc": "typedoc --target ES6 --module commonjs --name TsHttpExceptions --exclude '**/*.spec.ts' --out docs/ ./src/**/*.ts",
-    "commit:doc": "git status | grep -qF 'working directory clean' || (git commit -m 'build documentation' && git push origin master)"
+    "version": "npm run build:doc && git add docs",
+    "build:doc": "typedoc --target ES6 --module commonjs --name TsHttpExceptions --exclude '**/*.spec.ts' --out docs/ ./src/**/*.ts"
   },
   "repository": {
     "type": "git",
