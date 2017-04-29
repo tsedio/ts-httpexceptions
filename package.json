@@ -11,7 +11,7 @@
     "release:major": "npm run build:doc && npm run commit:doc ",
     "release:minor": "npm version minor && npm publish && git push --follow-tags",
     "release:patch": "npm version patch && npm publish && git push --follow-tags",
-    "test": "NODE_ENV=test mocha --opts test/mocha.opts",
+    "test": "NODE_ENV=test node_modules/mocha/bin/_mocha --opts test/mocha.opts",
     "test:cov": "NODE_ENV=test nyc npm test",
     "test:travis": "NODE_ENV=test nyc report --reporter=text-lcov | coveralls",
     "tsc": "node_modules/typescript/bin/tsc",
