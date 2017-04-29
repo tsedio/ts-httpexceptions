@@ -18,7 +18,7 @@ before_install:
   - npm install -g coveralls@2 nyc@10.3
 
 script:
-  - "npm run test"
+  - npm run test
 
 after_success:
   - npm run test:travis

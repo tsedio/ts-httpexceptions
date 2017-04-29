@@ -13,7 +13,7 @@
     "release:patch": "npm version patch && npm publish && git push --follow-tags",
     "test": "NODE_ENV=test mocha",
     "test:cov": "NODE_ENV=test nyc npm test",
-    "test:travis": "NODE_ENV=test nyc report --reporter=text-lcov | coveralls",
+    "test:travis": "NODE_ENV=test nyc npm test | coveralls",
     "tsc": "tsc",
     "tsc:compile": "rm -rf ./lib && tsc --project tsconfig.compile.json",
     "build:doc": "typedoc --target ES6 --module commonjs --name TsHttpExceptions --exclude *.spec.ts --externalPattern *.spec.ts --out docs/ src/**/",
@@ -43,6 +43,7 @@
     "@types/mocha": "^2.2.31",
     "@types/node": "^6.0.38",
     "chai": "^2.1.0",
+    "coveralls": "^2.13.1",
     "istanbul": "^0.4.2",
     "mocha": "^3.3.0",
     "nyc": "^10.3.0",
@@ -72,7 +73,8 @@
     ],
     "reporter": [
       "json",
-      "html"
+      "html",
+      "text-lcov"
     ],
     "all": true
   }
