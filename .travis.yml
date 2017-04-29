@@ -19,7 +19,9 @@ before_install:
 
 script:
   - "npm run test"
-  - "npm run test:travis"
+
+after_success:
+  - npm run test:travis
 
 after_script:
   - "test -e ./coverage/lcov.info && npm install coveralls@2 remap-istanbul@0.6.4 && ./node_modules/.bin/remap-istanbul -i ./coverage/coverage.json -t lcovonly | coveralls"

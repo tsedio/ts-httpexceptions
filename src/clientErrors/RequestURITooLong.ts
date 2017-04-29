@@ -6,7 +6,7 @@ const CODE = 414;
 
 export class RequestURITooLong extends Exception {
 
-    name: string = 'REQUEST_ENTITY_TOO_LARGE';
+    name: string = 'REQUEST_URI_TOO_LONG';
     status: number = CODE;
 
     constructor(message: string) {

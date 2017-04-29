@@ -2,7 +2,7 @@
  * @module redirections
  */ /** */
 import {Exception} from "../Exception";
-const CODE = 303;
+const CODE = 304;
 
 export class NotModified extends Exception {
 

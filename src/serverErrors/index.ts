@@ -12,3 +12,4 @@ export * from "./ServiceUnvailable";
 export * from "./NetworkAuthenticationRequired";
 export * from "./NotExtended";
 export * from "./VariantAlsoNegotiates";
+export * from "./BandwidthLimitExceeded";

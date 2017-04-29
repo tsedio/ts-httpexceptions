@@ -22,6 +22,7 @@
   },
 
   "exclude": [
+    "src/**/*.spec.ts",
     "node_modules",
     "test",
     "dts"

@@ -2,7 +2,7 @@
  * @module clientErrors
  */ /** */
 import {Exception} from "../Exception";
-const CODE = 415;
+const CODE = 416;
 
 export class RequestedRangeUnsatisfiable extends Exception {
 

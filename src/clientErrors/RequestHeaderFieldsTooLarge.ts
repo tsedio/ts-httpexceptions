@@ -2,7 +2,7 @@
  * @module clientErrors
  */ /** */
 import {Exception} from "../Exception";
-const CODE = 429;
+const CODE = 431;
 
 export class RequestHeaderFieldsTooLarge extends Exception {
 
