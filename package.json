@@ -31,7 +31,7 @@
   "bugs": {
     "url": "https://github.com/romakita/ts-httpexceptions/issues"
   },
-  "homepage": "https://github.com/romakita/ts-httpexceptions",
+  "homepage": "https://romakita.github.io/ts-httpexceptions",
   "dependencies": {},
   "devDependencies": {
     "@types/chai": "^3.4.32",
