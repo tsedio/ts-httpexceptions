@@ -1,6 +1,6 @@
 {
   "name": "ts-httpexceptions",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "Provide exception for HTTP Rest API",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",

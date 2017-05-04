@@ -79,23 +79,60 @@
 				</blockquote>
 				<p>This module lets you to throw an HTTP Exception quickly. </p>
 				<h2 id="features">Features</h2>
-				<p>Some HTTP Exception are already implemented : </p>
+				<p>Some HTTP Exceptions are already implemented : </p>
+				<p>Redirections (3xx):</p>
 				<ul>
-					<li>BadRequest</li>
-					<li>Unauthorized</li>
-					<li>PaymentRequired </li>
-					<li>Forbidden</li>
-					<li>NotFound</li>
-					<li>MethodNotAllowed</li>
-					<li>NotAcceptable</li>
-					<li>InternalServerError</li>
-					<li>NotImplemented</li>
-					<li>BadGateway</li>
-					<li>ProxyError</li>
-					<li>ServiceUnvailable</li>
-					<li>GatewayTimeout</li>
+					<li>MovedPermanently,</li>
+					<li>MovedTemporarily,</li>
+					<li>MultipleChoices,</li>
+					<li>NotModified,</li>
+					<li>PermanentRedirect,</li>
+					<li>SeeOther,</li>
+					<li>TemporaryRedirect,</li>
+					<li>TooManyRedirects,</li>
+					<li>UseProxy.</li>
 				</ul>
-				<p>You can use HTTPExceptions method to throw a custom Exception (see example).</p>
+				<p>Client errors (4xx) :</p>
+				<ul>
+					<li>BadMapping,</li>
+					<li>BadRequest,</li>
+					<li>Conflict,</li>
+					<li>ExpectationFailed,</li>
+					<li>Forbidden,</li>
+					<li>Gone,</li>
+					<li>ImATeapot,</li>
+					<li>LengthRequired,</li>
+					<li>MethodNotAllowed,</li>
+					<li>MisdirectedRequest,</li>
+					<li>NotAcceptable,</li>
+					<li>NotFound,</li>
+					<li>PaymentRequired,</li>
+					<li>PreconditionFailed,</li>
+					<li>PreconditionRequired,</li>
+					<li>ProxyAuthentificationRequired,</li>
+					<li>RequestedRandeUnsatifiable,</li>
+					<li>RequestTimeout,</li>
+					<li>RequestURITooLong,</li>
+					<li>TooManyRequests,</li>
+					<li>Unauthorized,</li>
+					<li>UnavailabledForLegalReasons,</li>
+					<li>UnsupportedMediaType,</li>
+					<li>UpgradeRequired.</li>
+				</ul>
+				<p>Server errors (5xx) :</p>
+				<ul>
+					<li>BadGateway,</li>
+					<li>BandwidthLimitExceeded,</li>
+					<li>GatewayTimeout,</li>
+					<li>InternalServerError,</li>
+					<li>NetworkAuthenticationRequired,</li>
+					<li>NotExtended,</li>
+					<li>NotImplemented,</li>
+					<li>ProxyError,</li>
+					<li>ServiceUnvailable,</li>
+					<li>VariantAlsoNegotiates.</li>
+				</ul>
+				<p>You can use HTTPExceptions method to throw a custom Exception.</p>
 				<h2 id="installation">Installation</h2>
 				<pre><code class="lang-bash">$ npm install -g typescript@2.0.2
 $ npm install ts-httpexceptions
