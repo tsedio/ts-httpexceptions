@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/romakita/httpexceptions"
+    "url": "http://github.com/romakita/ts-httpexceptions"
   },
   "keywords": [
     "Exceptions",
@@ -29,9 +29,9 @@
   "author": "Romakita",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/romakita/httpexceptions/issues"
+    "url": "https://github.com/romakita/ts-httpexceptions/issues"
   },
-  "homepage": "https://github.com/romakita/httpexceptions",
+  "homepage": "https://github.com/romakita/ts-httpexceptions",
   "dependencies": {},
   "devDependencies": {
     "@types/chai": "^3.4.32",

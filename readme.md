@@ -16,22 +16,61 @@ This module lets you to throw an HTTP Exception quickly.
 
 ## Features
 
-Some HTTP Exception are already implemented : 
- * BadRequest
- * Unauthorized
- * PaymentRequired 
- * Forbidden
- * NotFound
- * MethodNotAllowed
- * NotAcceptable
- * InternalServerError
- * NotImplemented
- * BadGateway
- * ProxyError
- * ServiceUnvailable
- * GatewayTimeout
+Some HTTP Exceptions are already implemented : 
+
+Redirections (3xx):
+
+ * MovedPermanently,
+ * MovedTemporarily,
+ * MultipleChoices,
+ * NotModified,
+ * PermanentRedirect,
+ * SeeOther,
+ * TemporaryRedirect,
+ * TooManyRedirects,
+ * UseProxy.
+
+Client errors (4xx) :
+
+ * BadMapping,
+ * BadRequest,
+ * Conflict,
+ * ExpectationFailed,
+ * Forbidden,
+ * Gone,
+ * ImATeapot,
+ * LengthRequired,
+ * MethodNotAllowed,
+ * MisdirectedRequest,
+ * NotAcceptable,
+ * NotFound,
+ * PaymentRequired,
+ * PreconditionFailed,
+ * PreconditionRequired,
+ * ProxyAuthentificationRequired,
+ * RequestedRandeUnsatifiable,
+ * RequestTimeout,
+ * RequestURITooLong,
+ * TooManyRequests,
+ * Unauthorized,
+ * UnavailabledForLegalReasons,
+ * UnsupportedMediaType,
+ * UpgradeRequired.
  
-You can use HTTPExceptions method to throw a custom Exception (see example).
+Server errors (5xx) :
+ 
+ * BadGateway,
+ * BandwidthLimitExceeded,
+ * GatewayTimeout,
+ * InternalServerError,
+ * NetworkAuthenticationRequired,
+ * NotExtended,
+ * NotImplemented,
+ * ProxyError,
+ * ServiceUnvailable,
+ * VariantAlsoNegotiates.
+ 
+You can use HTTPExceptions method to throw a custom Exception.
 
 
 ## Installation
