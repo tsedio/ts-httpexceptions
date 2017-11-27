@@ -13,8 +13,7 @@
 
 > Provide Exceptions for REST API based on Express.js. Written in Typescript !
 
-See [guide installation](https://romakita.github.io/ts-httpexceptions/#/getting-started) and our [API](https://romakita.github.io/ts-httpexceptions/#/api/index)
-
+See [guide installation](https://romakita.github.io/ts-httpexceptions/#/getting-started) and our [API](https://romakita.github.io/ts-httpexceptions/#/api/index).
 ## Features
 
 Some HTTP Exceptions are already implemented : 
