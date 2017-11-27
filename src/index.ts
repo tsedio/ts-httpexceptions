@@ -1,7 +1,8 @@
 /**
  * @module ts-httpexceptions
  * @preferred
- */ /** */
+ */
+/** */
 
 export * from "./clientErrors";
 export * from "./redirections";

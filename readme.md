@@ -9,7 +9,8 @@
 [![img](https://david-dm.org/Romakita/ts-httpexceptions/dev-status.svg)](https://david-dm.org/Romakita/ts-httpexceptions/#info=devDependencies)
 [![img](https://david-dm.org/Romakita/ts-httpexceptions/peer-status.svg)](https://david-dm.org/Romakita/ts-httpexceptions/#info=peerDependenciess)
 [![Known Vulnerabilities](https://snyk.io/test/github/Romakita/ts-httpexceptions/badge.svg)](https://snyk.io/test/github/Romakita/ts-httpexceptions)
-
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+semantic-release-cli setup
 > Provide Exceptions for REST API based on Express.js. Written in Typescript !
 
 This module lets you to throw an HTTP Exception quickly. 

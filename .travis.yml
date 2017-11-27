@@ -1,26 +1,20 @@
 language: node_js
+
+notifications:
+  email: false
+
 node_js:
-  - '4'
-  - '5'
-  - '6'
   - 'node'
-
-env:
-  - CXX=g++-4.8
-addons:
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-    packages:
-      - g++-4.8
-
-before_install:
-  - npm install -g coveralls@2 nyc@10.3
-
-script:
-  - npm run test
+  - '8'
+  - '7'
+  - '6'
 
 after_success:
-  - npm run test:travis
+  - npm run coveralls:travis
+  - sh ./sh/prepublish.sh && semantic-release pre && sh ./sh/publish.sh
 
-sudo: required
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
+
+sudo: false

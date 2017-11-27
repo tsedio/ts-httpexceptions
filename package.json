@@ -5,19 +5,18 @@
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
+    "clean": "rimraf 'test/**/*.{js,js.map}' 'src/**/*.{js,js.map}'",
+    "tslint": "tslint 'src/**/*.ts?(x)'",
+    "test": "npm run clean && npm run tsc && npm run tslint && NODE_ENV=test nyc --reporter=html --reporter=text _mocha --recursive",
+    "coveralls:travis": "nyc report --reporter=text-lcov | coveralls",
+    "tsc": "tsc --project tsconfig.json",
+    "tsc:compile": "rimraf ./lib && tsc --project tsconfig.compile.json",
     "prepublish": "npm run tsc:compile",
-    "tslint": "tslint ./src/*.ts",
-    "test": "NODE_ENV=test mocha",
-    "test:cov": "NODE_ENV=test nyc npm test",
-    "test:travis": "NODE_ENV=test nyc --reporter=text-lcov npm test | coveralls",
-    "tsc": "tsc",
-    "tsc:compile": "rm -rf ./lib && tsc --project tsconfig.compile.json",
-    "version": "npm run build:doc && git add docs",
-    "build:doc": "typedoc --target ES6 --module commonjs --name TsHttpExceptions --exclude '**/*.spec.ts' --out docs/ ./src/**/*.ts"
+    "doc:build": "echo 'No documentation build' && exit 0"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/romakita/ts-httpexceptions"
+    "url": "https://github.com/romakita/ts-httpexceptions.git"
   },
   "keywords": [
     "Exceptions",
@@ -39,37 +38,25 @@
     "@types/mocha": "^2.2.31",
     "@types/node": "^6.0.38",
     "chai": "^2.1.0",
-    "coveralls": "^2.13.1",
+    "coveralls": "^3.0.0",
     "mocha": "^3.3.0",
     "nyc": "^10.3.0",
-    "source-map-support": "^0.4.15",
-    "ts-node": "^3.0.2",
-    "tslint": "^5.1.0",
-    "typedoc": "0.5.10",
-    "typedoc-plugin-external-module-name": "^1.0.9",
-    "typescript": "^2.2.2"
+    "rimraf": "^2.6.2",
+    "semantic-release": "^8.2.0",
+    "source-map-support": "^0.5.0",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.1"
   },
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=6.0.0"
   },
-  "nyc": {
-    "extension": [
-      ".ts",
-      ".tsx"
-    ],
-    "exclude": [
-      "coverage",
-      "docs",
-      "**/*.d.ts"
-    ],
-    "require": [
-      "ts-node/register"
-    ],
-    "reporter": [
-      "json",
-      "html",
-      "text-summary"
-    ],
-    "all": true
+  "gflow": {
+    "master": "master",
+    "production": "production"
+  },
+  "release": {
+    "debug": false,
+    "branch": "production"
   }
 }

@@ -1,6 +1,8 @@
 /**
  * @module ts-httpexceptions
- */ /** */
+ */
+
+/** */
 
 /**
  * Class error definition
@@ -12,8 +14,9 @@ export declare class Error {
 
     constructor(message?: string);
 
-    static captureStackTrace(error: Error, constructorOpt: any);
+    static captureStackTrace(error: Error, constructorOpt: any): any;
 }
+
 /**
  * Refined class as Exception
  */
