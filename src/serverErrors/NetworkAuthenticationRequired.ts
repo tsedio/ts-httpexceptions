@@ -2,7 +2,7 @@
  * @module serverErrors
  */
 /** */
-import {Exception} from "../Exception";
+import {Exception} from "../core/Exception";
 
 export class NetworkAuthenticationRequired extends Exception {
 
