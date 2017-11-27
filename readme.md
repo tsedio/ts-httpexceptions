@@ -13,7 +13,7 @@
 
 > Provide Exceptions for REST API based on Express.js. Written in Typescript !
 
-This module lets you to throw an HTTP Exception quickly. 
+See [guide installation](https://romakita.github.io/ts-httpexceptions/#/getting-started) and our [API](https://romakita.github.io/ts-httpexceptions/#/api/index)
 
 ## Features
 

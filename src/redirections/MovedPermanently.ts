@@ -2,7 +2,7 @@
  * @module redirections
  */
 /** */
-import {Exception} from "../Exception";
+import {Exception} from "../core/Exception";
 
 export class MovedPermanently extends Exception {
 

@@ -2,7 +2,7 @@
  * @module clientErrors
  */
 /** */
-import {Exception} from "../Exception";
+import {Exception} from "../core/Exception";
 
 export class Forbidden extends Exception {
 
