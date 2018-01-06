@@ -1,4 +1,4 @@
-export class Exception implements Error {
+export class Exception extends Error {
     /**
      * Exception base name
      * @type {string}
@@ -30,13 +30,7 @@ export class Exception implements Error {
      * @param innerException
      */
     constructor(status: any, message?: string, innerException?: any) {
-
-        Error.apply(this, arguments);
-
-        if (typeof Error.captureStackTrace === "function") {
-            //noinspection JSUnresolvedFunction
-            Error.captureStackTrace(this, (<any>this).contructor);
-        }
+        super(message);
 
         this.status = status;
         this.message = message || "";
