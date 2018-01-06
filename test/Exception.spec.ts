@@ -1,7 +1,5 @@
-import {expect, assert} from "chai";
-import {
-    Exception
-} from "../src";
+import {expect} from "chai";
+import {Exception} from "../src";
 
 describe("Exception", () => {
 
@@ -10,7 +8,7 @@ describe("Exception", () => {
         const exception = new Exception(203, "test", new Error("test"));
 
         expect(exception.status).to.equal(203);
-        expect(exception.toString()).to.equal("HttpException(203): test, innerException: test");
+        expect(exception.toString()).to.equal("HTTP_EXCEPTION(203): test, innerException: test");
 
     });
 
@@ -19,7 +17,7 @@ describe("Exception", () => {
         const exception = new Exception(203, "test", "test");
 
         expect(exception.status).to.equal(203);
-        expect(exception.toString()).to.equal("HttpException(203): test, innerException: test");
+        expect(exception.toString()).to.equal("HTTP_EXCEPTION(203): test, innerException: test");
 
     });
 
@@ -28,7 +26,7 @@ describe("Exception", () => {
         const exception = new Exception(203, "test", 1);
 
         expect(exception.status).to.equal(203);
-        expect(exception.toString()).to.equal("HttpException(203): test, innerException: 1");
+        expect(exception.toString()).to.equal("HTTP_EXCEPTION(203): test, innerException: 1");
 
     });
 
@@ -37,9 +35,7 @@ describe("Exception", () => {
         const exception = new Exception(203, undefined);
 
         expect(exception.status).to.equal(203);
-        expect(exception.toString()).to.equal("HttpException(203):");
+        expect(exception.toString()).to.equal("HTTP_EXCEPTION(203):");
 
     });
-
-
 });

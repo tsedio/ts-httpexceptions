@@ -3,7 +3,7 @@ export class Exception extends Error {
      * Exception base name
      * @type {string}
      */
-    public name: string = "HttpException";
+    public name: string = "HTTP_EXCEPTION";
     /**
      * Message of the exception
      */
