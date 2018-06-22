@@ -8,7 +8,7 @@ import {
     RequestedRangeUnsatisfiable, RequestEntityTooLarge, RequestHeaderFieldsTooLarge,
     RequestTimeout, RequestURITooLong, TooManyRequests,
     Unauthorized, UnavailabledForLegalReasons, UnsupportedMediaType,
-    UpgradeRequired
+    UpgradeRequired, UnprocessableEntity
 } from "../src/clientErrors";
 import {ExpectationFailed} from "../src/clientErrors/ExpectationFailed";
 
@@ -481,5 +481,24 @@ describe("ClientErrors", () => {
             expect(err.toString()).to.equal("UPGRADE_REQUIRED(426): message");
         });
     });
+
+    describe("UnprocessableEntity", () => {
+        it("should emit an exception", () => {
+
+            const err = new UnprocessableEntity("message");
+
+            assert
+                .throw(
+                    () => {
+                        throw err
+                    },
+                    "message"
+                );
+
+            expect(err.status).to.equal(422);
+            expect(err.toString()).to.equal("UNPROCESSABLE_ENTITY(422): message");
+        });
+    });
+
 });
 

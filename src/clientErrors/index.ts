@@ -30,3 +30,4 @@ export * from "./Unauthorized";
 export * from "./UnsupportedMediaType";
 export * from "./UpgradeRequired";
 export * from "./UnavailabledForLegalReasons";
+export * from "./UnprocessableEntity";
