@@ -32,7 +32,9 @@
     "url": "https://github.com/romakita/ts-httpexceptions/issues"
   },
   "homepage": "https://romakita.github.io/ts-httpexceptions",
-  "dependencies": {},
+  "dependencies": {
+    "tslib": "^1.9.3"
+  },
   "devDependencies": {
     "@types/chai": "^4.1.4",
     "@types/express": "^4.16.0",
