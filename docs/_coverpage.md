@@ -1,7 +1,7 @@
 <!-- _coverpage.md -->
 
 
-# Ts.HttpExceptions <small class="version">3.1.0</small>
+# Ts.HttpExceptions <small class="version">3.1.1</small>
 
 > HTTP Exceptions for REST API based on Express.js
 
