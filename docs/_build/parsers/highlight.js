@@ -39,6 +39,7 @@ module.exports = (content, current) => {
 
   content = content.replace(symbolsMatch(current), replacement);
 
+
   return content;
 };
 

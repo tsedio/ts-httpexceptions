@@ -8,6 +8,6 @@
 - Extensible
 - ES6/Typescript
 
-[GitHub](https://github.com/Romakita/ts-httpexceptions/)
+[GitHub](https://github.com/TypeProject/ts-httpexceptions/)
 [Get Started](#tshttpexceptions)
 

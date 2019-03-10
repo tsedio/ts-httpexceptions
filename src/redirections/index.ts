@@ -1,13 +1,3 @@
-/**
- * @module redirections
- * @preferred
- * All errors 3xx
- */
-/** */
-
-/**
- * Export module
- */
 export * from "./MovedPermanently";
 export * from "./MovedTemporarily";
 export * from "./MultipleChoices";

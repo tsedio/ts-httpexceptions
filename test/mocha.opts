@@ -1,8 +1,5 @@
---compilers ts:ts-node/register
---require source-map-support/register
---recursive
---reporter spec
+--require ts-node/register
 --check-leaks
---full-trace
---bail
-test/**/*.spec.ts
+--recursive
+--reporter dot
+{packages,test}/**/*.spec.ts

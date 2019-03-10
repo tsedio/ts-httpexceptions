@@ -1,9 +1,3 @@
-/**
- * All errors 5xx
- * @module serverErrors
- */
-/** */
-
 export * from "./BadGateway";
 export * from "./GatewayTimeout";
 export * from "./InternalServerError";

@@ -6,7 +6,8 @@
     "outDir": "lib/",
     "declarationDir": "lib/",
     "noResolve": false,
-    "preserveConstEnums": true
+    "preserveConstEnums": true,
+    "noEmit": false
   },
   "include": [
     "src/**/*"

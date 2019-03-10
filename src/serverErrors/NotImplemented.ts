@@ -1,14 +1,9 @@
-/**
- * @module serverErrors
- */
-/** */
 import {Exception} from "../core/Exception";
 
 export class NotImplemented extends Exception {
+  name: string = "NOT_IMPLEMENTED";
 
-    name: string = "NOT_IMPLEMENTED";
-
-    constructor(message: string) {
-        super(501, message);
-    }
+  constructor(message: string) {
+    super(501, message);
+  }
 }

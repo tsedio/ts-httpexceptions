@@ -9,9 +9,9 @@ module.exports = {
   host: `${github}/blob/v${version}/src/`,
   modules: {
     "core": "common/core",
-    "clientErrors": "common/clientErrors",
-    "redirections": "common/redirections",
-    "serverErrors": "common/serverErrors"
+    "appenders": "common/appenders",
+    "layouts": "common/layouts",
+    "logger": "common/logger"
   },
   symbolTypes: require("./types"),
   symbols: new Map(),

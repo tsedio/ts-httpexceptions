@@ -1,14 +1,9 @@
-/**
- * @module serverErrors
- */
-/** */
 import {Exception} from "../core/Exception";
 
 export class ServiceUnvailable extends Exception {
+  name: string = "SERVICE_UNVAILABLE";
 
-    name: string = "SERVICE_UNVAILABLE";
-
-    constructor(message: string) {
-        super(503, message);
-    }
+  constructor(message: string) {
+    super(503, message);
+  }
 }
