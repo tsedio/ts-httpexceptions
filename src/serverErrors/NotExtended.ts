@@ -1,14 +1,9 @@
-/**
- * @module serverErrors
- */
-/** */
 import {Exception} from "../core/Exception";
 
 export class NotExtended extends Exception {
+  name: string = "NOT_EXTENDED";
 
-    name: string = "NOT_EXTENDED";
-
-    constructor(message: string) {
-        super(510, message);
-    }
+  constructor(message: string) {
+    super(510, message);
+  }
 }

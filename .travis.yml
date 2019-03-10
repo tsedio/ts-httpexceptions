@@ -5,9 +5,9 @@ notifications:
 
 node_js:
   - 'node'
+  - '10'
+  - '9'
   - '8'
-  - '7'
-  - '6'
 
 after_success:
   - npm run coveralls:travis

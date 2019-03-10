@@ -1,9 +1,3 @@
-/**
- * All errors 4xx
- * @module clientErrors
- * @preferred
- */
-/** */
 export * from "./BadMapping";
 export * from "./BadRequest";
 export * from "./Conflict";
