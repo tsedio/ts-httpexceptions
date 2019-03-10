@@ -1,8 +1,5 @@
 language: node_js
 
-notifications:
-  email: false
-
 node_js:
   - 'node'
   - '10'
@@ -10,8 +7,9 @@ node_js:
   - '8'
 
 after_success:
-  - npm run coveralls:travis
-  - sh ./sh/prepublish.sh && semantic-release pre && sh ./sh/publish.sh
+  - npm run build
+  - npx travis-deploy-once "npm run semantic-release"
+  - npm run test:coveralls
 
 branches:
   except:
