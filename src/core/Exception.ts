@@ -17,38 +17,39 @@ export class Exception extends Error {
    * Stack calling
    */
   public stack: string;
-  public innerException: Error;
+  public origin: Error;
   /**
    * HTTP Code Status
    */
   public status: number;
-
   /**
    *
-   * @param status
-   * @param message
-   * @param innerException
    */
-  constructor(status: any, message?: string, innerException?: any) {
+  public body: any;
+
+  [key: string]: any;
+
+  constructor(status: number = 500, message: string = "", origin?: Error | string | any) {
     super(message);
 
     this.status = status;
-    this.message = message || "";
+    this.message = message;
 
-    if (innerException) {
-      if (innerException instanceof Error) {
-        this.innerException = <Error>innerException;
-        this.message = this.message + ", innerException: " + this.innerException.message;
-      } else if (typeof innerException === "string") {
-        this.innerException = new Error(innerException);
-        this.message = this.message + ", innerException: " + this.innerException.message;
+    this.setOrigin(origin);
+  }
+
+  setOrigin(origin: Error | string | any) {
+    if (origin) {
+      if (origin instanceof Error) {
+        this.origin = origin;
+        this.message = `${this.message}, innerException: ${this.origin.message}`.trim();
+      } else if (typeof origin === "string") {
+        this.origin = new Error(origin);
+        this.message = `${this.message}, innerException: ${this.origin.message}`.trim();
       } else {
-        this.innerException = <Error>innerException;
-        this.message = this.message + ", innerException: " + this.innerException;
+        this.body = origin;
       }
     }
-
-    this.message = (this.message + " ").trim();
   }
 
   toString() {
