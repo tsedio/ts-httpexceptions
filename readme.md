@@ -1,19 +1,15 @@
 # ts-httpexceptions 
 
-[![Build Status](https://travis-ci.org/TypedProject/ts-httpexceptions.svg?branch=master)](https://travis-ci.org/TypedProject/ts-httpexceptions)
-[![Coverage Status](https://coveralls.io/repos/github/TypedProject/ts-httpexceptions/badge.svg?branch=master)](https://coveralls.io/github/TypedProject/ts-httpexceptions?branch=master)
-[![TypeScript](https://badges.frapsoft.com/typescript/love/typescript.svg?v=100)](https://github.com/ellerbrock/typescript-badges/) 
-[![Package Quality](http://npm.packagequality.com/shield/ts-express-decorators.png)](http://packagequality.com/#?package=ts-express-decorators)
-[![npm version](https://badge.fury.io/js/ts-express-decorators.svg)](https://badge.fury.io/js/ts-express-decorators)
-[![Dependencies](https://david-dm.org/TypedProject/ts-httpexceptions.svg)](https://david-dm.org/TypedProject/ts-httpexceptions#info=dependencies)
-[![img](https://david-dm.org/TypedProject/ts-httpexceptions/dev-status.svg)](https://david-dm.org/TypedProject/ts-httpexceptions/#info=devDependencies)
-[![img](https://david-dm.org/TypedProject/ts-httpexceptions/peer-status.svg)](https://david-dm.org/TypedProject/ts-httpexceptions/#info=peerDependenciess)
-[![Known Vulnerabilities](https://snyk.io/test/github/TypedProject/ts-httpexceptions/badge.svg)](https://snyk.io/test/github/TypedProject/ts-httpexceptions)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+This repository is archived. The source code is now available on https://github.com/TypedProject/tsed/tree/production/packages/exceptions repository
 
-> Provide Exceptions for REST API based on Express.js. Written in Typescript !
+See documentation on [https://tsed.io](https://tsed.io/docs/exceptions.html).
 
-See [guide installation](https://TypedProject.github.io/ts-httpexceptions/#/getting-started) and our [API](https://TypedProject.github.io/ts-httpexceptions/#/api/index).
+## Installation
+
+```
+npm install @tsed/exceptions
+```
+
 ## Features
 
 Some HTTP Exceptions are already implemented : 
@@ -72,14 +68,6 @@ Server errors (5xx) :
  
 You can use HTTPExceptions method to throw a custom Exception.
 
-
-## Installation
-
-```bash
-$ npm install -g typescript@2.0.2
-$ npm install ts-httpexceptions
-```
-
 ## API
 
 ```typescript
@@ -132,19 +120,28 @@ app.use((err, request, response, next) => {
 });
 ```
 
+## Contributors
+Please read [contributing guidelines here](./CONTRIBUTING.md).
 
-## Test
+<a href="https://github.com/TypedProject/tsed/graphs/contributors"><img src="https://opencollective.com/tsed/contributors.svg?width=890" /></a>
 
-```bash 
-$ npm install -g mocha
-$ npm test
-```
+
+## Backers
+
+Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/tsed#backer)]
+
+<a href="https://opencollective.com/tsed#backers" target="_blank"><img src="https://opencollective.com/tsed/tiers/backer.svg?width=890"></a>
+
+
+## Sponsors
+
+Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/tsed#sponsor)]
 
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2016 Romain Lenzotti
+Copyright (c) 2016 - 2020 Ts.ED
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
